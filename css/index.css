@@ -1,0 +1,238 @@
+html {
+  font-size: 62.5%;
+  background: #9ABFAD;
+}
+#headerpic {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  background-size: cover;
+  height: 700px;
+  width: 101.5%;
+  margin-top: -8px;
+  display: inline-block;
+  border-bottom: 1px solid #EAD361;
+  position: relative;
+}
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+nav a {
+  padding-left: 15px;
+  padding-right: 15px;
+  text-decoration: none;
+  font-size: 2rem;
+  font-family: 'Source Sans Pro', sans-serif;
+  margin-top: -670px;
+  color: white;
+  font-weight: 300;
+}
+nav #product-name {
+  font-size: 2.5rem;
+  font-family: 'Ultra', serif;
+  border: 0.5px solid white;
+  border-radius: 4px;
+  padding: 30px;
+  letter-spacing: 1rem;
+  background: rgba(225, 225, 225, 0.3);
+  position: relative;
+  bottom: 40px;
+}
+h2 {
+  position: relative;
+  bottom: 670px;
+  font-size: 10.5rem;
+  font-family: 'Ultra';
+  font-weight: 200;
+  font-style: italic;
+  color: white;
+  letter-spacing: 0.5rem;
+  padding-left: 5%;
+}
+.learn-more-button {
+  position: relative;
+  top: -76rem;
+  padding-left: 6%;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 300;
+  font-size: 1.9rem;
+  color: white;
+}
+.learn-more-button span {
+  border: 1px solid #9ABFAD;
+  border-radius: 5px;
+  background: #9ABFAD;
+  display: inline;
+  padding: 4px 5px;
+  font-size: 1.9rem;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 300;
+  color: white;
+  font-style: italic;
+}
+.top-body-content .img-container {
+  display: flex;
+  justify-content: space-evenly;
+  position: relative;
+  bottom: 200px;
+  border-bottom: 1px solid #EAD361;
+  padding-bottom: 20px;
+}
+.top-body-content .img-container .teamphoto {
+  height: 375px;
+  width: 375px;
+  border-radius: 70%;
+  border: 1px solid #EAD361;
+}
+.top-body-content .img-container .teamphoto-placeholder {
+  background: #339DCC;
+  color: #EAD361;
+  border: 1px solid #FFA499;
+  border-radius: 100%;
+  width: 375px;
+  font-size: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: 'Ultra';
+  font-style: italic;
+  letter-spacing: 0.4rem;
+}
+.body-content {
+  display: flex;
+  justify-content: space-between;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: white;
+  position: relative;
+  padding: 0 80px;
+  font-weight: 300;
+  font-style: italic;
+}
+#para-one {
+  margin-right: 70px;
+  position: relative;
+  bottom: 150px;
+  text-align: left;
+  border-bottom: 1px solid #EAD361;
+  padding-bottom: 10px;
+}
+#para-two {
+  margin-left: 70px;
+  position: relative;
+  bottom: 150px;
+  text-align: left;
+  border-bottom: 1px solid #EAD361;
+  padding-bottom: 10px;
+}
+.accent-circle {
+  background: #339DCC;
+  border: 1px solid #EAD361;
+  height: 60px;
+  width: 60px;
+  border-radius: 100%;
+  position: relative;
+  bottom: 290px;
+  margin: auto;
+}
+.footer-class {
+  background: black;
+  height: 210px;
+  padding: 0 0;
+  margin: 0;
+  border: 0;
+  font-family: 'Source Sans Pro', sans-serif;
+  color: white;
+  width: 101.5%;
+  position: relative;
+  top: 20px;
+  display: flex;
+  justify-content: center;
+}
+.footer-class h4 {
+  font-size: 2rem;
+  padding: 30px;
+  font-weight: 300;
+  font-style: italic;
+}
+.social-media-icons-a {
+  padding-left: 90px;
+}
+.social-media-icons-a img {
+  height: 65px;
+  width: 65px;
+}
+.social-media-icons-a .group-a-icons {
+  padding: 10px;
+  position: relative;
+  bottom: 200px;
+  right: 360px;
+  border: 1px solid #EAD361;
+}
+#social-media-header-a {
+  padding: 30px 15px;
+  position: relative;
+  bottom: 330px;
+  background: #339DCC;
+  border-radius: 5px;
+  display: inline-block;
+  font-family: 'Ultra';
+  color: #EAD361;
+  font-style: italic;
+  letter-spacing: 0.5rem;
+  font-size: 2.5rem;
+}
+.social-media-icons-b img {
+  height: 65px;
+  width: 65px;
+}
+.social-media-icons-b .group-b-icons {
+  padding: 10px;
+  position: relative;
+  left: 490px;
+  bottom: 340px;
+  border: 1px solid #EAD361;
+}
+#social-media-header-b {
+  position: relative;
+  bottom: 470px;
+  left: 850px;
+  padding: 30px 15px;
+  background: #339DCC;
+  border-radius: 5px;
+  display: inline-block;
+  font-family: 'Ultra';
+  color: #EAD361;
+  font-style: italic;
+  letter-spacing: 0.5rem;
+  font-size: 2.5rem;
+}
+h1 {
+  font-family: garamond;
+  font-style: bold;
+  font-size: 4rem;
+  font-style: italic;
+  color: #EAD361;
+  text-align: left;
+  display: inline-block;
+  padding-bottom: 10px;
+  letter-spacing: 0.5rem;
+  border-bottom: 1px solid #339DCC;
+}
+.question-one {
+  position: relative;
+  left: 150px;
+  bottom: 150px;
+}
+.question-two {
+  position: relative;
+  left: 830px;
+  bottom: 595px;
+}
+.move {
+  bottom: 450px;
+}
