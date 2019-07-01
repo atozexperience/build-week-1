@@ -13,10 +13,13 @@ border:0;
 background-size:cover;
 height:700px;
 width:101.5%;
-margin-top:-8px;
 display: inline-block;
 border-bottom: 1px solid #EAD361;
 position: relative;
+bottom:8px;
+right:9px;
+
+
 
 
    
@@ -24,40 +27,42 @@ position: relative;
 
 
 nav {
-    display:flex;
+   display:flex;
     justify-content:center;
-    align-items: flex-start;
+align-items: flex-start;
+
     a { 
         padding-left:15px;
         padding-right: 15px;
         text-decoration: none;
         font-size:2rem;
         font-family:'Source Sans Pro', sans-serif;
-        margin-top:-670px;
         color:white;
         font-weight: 300;
+        position: relative;
+        bottom:700px;
+      
+       
+
         }
         
     #product-name {
         font-size:2.5rem;
         font-family: 'Ultra', serif;
-       // font-family: 'Source Sans Pro', sans-serif;
         border:.5px solid white;
         border-radius:4px;
         padding:30px;
-        //font-weight:bold;
         letter-spacing: 1rem;
         background:rgba(225,225,225,0.3);
-        position: relative;
-        bottom:40px;
-        
+        bottom:715px;
+       
         
         
     }
 }
 h2 {
     position: relative;
-    bottom:670px;
+    bottom:780px;
     font-size: 10.5rem;
     font-family: 'Ultra';
     //font-family: 'Source Sans Pro', sans-serif;
@@ -68,27 +73,15 @@ h2 {
  padding-left: 5%;
 
 }
-.learn-more-button {
+.learn-more {
     position: relative;
-    top:-76rem;
+    top:-86rem;
     padding-left: 6%;
     font-family:'Source Sans Pro', sans-serif;
     font-weight: 300;
     font-size: 1.9rem;
     color: white;
-    span {
-        border: 1px solid #9ABFAD;
-        border-radius: 5px;
-        background:#9ABFAD;;
-        display:inline;
-        padding: 4px 5px;
-        font-size: 1.9rem;
-        font-family:'Source Sans Pro', sans-serif;
-        font-weight: 300;
-        color: white;
-        font-style: italic;
-    
-    }
+     font-style:italic;
 }
 .top-body-content {
  
@@ -97,8 +90,7 @@ h2 {
         display:flex;
         justify-content:space-evenly;
         position: relative;
-        bottom:200px;
-        border-bottom:1px solid #EAD361;
+        bottom:400px;
         padding-bottom:20px;
        
     
@@ -158,25 +150,7 @@ h2 {
  
  }
  
- #para-one {
-     margin-right:70px;
-     position: relative;
-     bottom:150px;
-     text-align:left;
-     border-bottom: 1px solid #EAD361;
-     padding-bottom: 10px;
-     
- }
 
- #para-two {
-     margin-left:70px;
-     position: relative;
-  bottom:150px;
-     text-align:left;
-     border-bottom: 1px solid #EAD361;
-     padding-bottom:10px;
-     
- }
 
  .accent-circle {
      background:#339DCC;
@@ -199,10 +173,9 @@ color:white;
 width:101.5%;
 position: relative;
 top:20px;
-
+right:8px;
 display:flex;
 justify-content: center;
-
 
 
 h4 {
@@ -215,111 +188,264 @@ h4 {
 }
  }
 
- .social-media-icons-a {
-    padding-left:90px;
+ 
   
-   
-   img {
-       height:65px;
-       width:65px;
-   }
-   .group-a-icons {
-       padding:10px;
- position: relative;
-bottom:200px;
- right:360px;
- border: 1px solid #EAD361;
- 
-   }
 
- 
- 
- }
 
- #social-media-header-a { 
-padding: 30px 15px;
+
+
+
+
+
+//  reviews styles 
+
+.options {
+display:flex;
+justify-content:center;
+align-items:flex-starts;
+
+
+}
+.review-cat {
+font-size:1.5rem;
+background:#339DCC;
+color:#EAD361;
+padding:8px;
+margin-left:5px;
+//font-family:'Source Sans Pro', sans-serif;
+font-family: 'Ultra';
+font-style:italic;
 position: relative;
-bottom:330px;
-    background:#339DCC;
-    border-radius:5px;
-    display:inline-block;
-   font-family: 'Ultra';
-    //font-family:'Source Sans Pro', sans-serif;
-    color:#EAD361;
-    font-style:italic;
-    letter-spacing: .5rem;
-    font-size:2.5rem;
-}  
+border-radius: 3px;
+bottom:580px;
+cursor:pointer;
 
 
-.social-media-icons-b {
+}
+.reviews-container {
+    display:flex;
+    justify-content: center;
+    align-content: space-around;
+    flex-wrap: wrap;
+    position:relative;
+    bottom:550px;
 
-  
+  .review {
+    height:375px;
+    width:375px;
+  background: #339DCC;
+         color:#EAD361;
+         border:1px solid #FFA499;
+         border-radius: 100%;
+         width:375px;
+         font-size:4rem;
+         display:flex;
+         align-items: center;
+         text-align:center;
+         font-family:'Ultra';
+         font-style:italic;
+         letter-spacing: .4rem; 
+     display:none;
+        }
+ #small-text {
+     font-size:2rem;
+     font-family:'Source Sans Pro', sans-serif;
+ }   
    
-   img {
-       height:65px;
-       width:65px;
-   }
-   .group-b-icons {
-       padding:10px;
- position: relative;
-   left:490px;
-   bottom:340px;
- border: 1px solid #EAD361;
- 
-   }
 
- 
- 
- }
+}
 
- #social-media-header-b { 
-  position: relative;
-  bottom:470px;
-  left:850px;
-padding: 30px 15px;
-    background:#339DCC;
-    border-radius:5px;
-    display:inline-block;
-   font-family: 'Ultra';
-    //font-family:'Source Sans Pro', sans-serif;
+
+.question-class-container {
+    display:flex;
+    justify-content:space-around;
+    align-content: flex-end;
+    font-size:2.5rem;
     color:#EAD361;
     font-style:italic;
-    letter-spacing: .5rem;
-    font-size:2.5rem;
-}  
-
-h1 {
-   //  font-family: 'Source Sans Pro', sans-serif;
-  //  font-family: 'Ultra';
-  font-family: garamond;
-font-style: bold;
-    font-size:4rem;
-    font-style: italic;
-   color: #EAD361;
-   // color:white;
-  // color:#339DCC;
-   // color: #FFA499;;
-    text-align:left; 
-    display:inline-block;
-    padding-bottom:10px;
-letter-spacing: .5rem;
-border-bottom: 1px solid #339DCC;
-}
-.question-one  {
+    font-weight:300;
     position: relative;
-    left:150px;
-    bottom:150px;
+    bottom:300px;
+    text-align: left;
 }
 
-.question-two {
+.paragraph-class {
+    box-sizing: border-box;
+    display:flex;
+    justify-content: space-evenly;
+    font-size:2rem;
+    color:white;
+    padding:0 120px;
+    font-family:'Source Sans Pro', sans-serif;
+    font-weight: 300;
+    font-style:italic;
+
+
+}
+.move-one {
     position: relative;
-    left:830px;
-    bottom:595px;
+    right:50px;
+    bottom:300px;
+}
+.move-two{
+    position: relative;
+    left:60px;
+    bottom:300px;
+}
+.move-three{
+    position: relative;
+    right:50px;
+}
+.icons-styling{
+    height:75px;
+    width:75px;
+    position:relative;
+    bottom:130px;
+    right:200px;
+}
+.icons-styling-a {
+    height:75px;
+    width:75px;
+    position: relative;
+left: 550px;
+bottom:220px;
+    
+}
+.h3-style {
+    color: #EAD361;
+    display:inline;
+    background: #339DCC;
+    padding:25px 60px;
+    font-size:3rem;
+    border-radius:10px;
+    
+}
+.move-four {
+    position: relative;
+    bottom:250px;
+    left:100px;
+   
+}
+.move-five{
+    position:relative;
+    left:850px;
+    bottom:340px;
+}
+@mobile: ~"(max-width:500px)";
 
+@media @mobile {
+#headerpic{
+    width:103%;
+   right:8px;
+  
+}
+h2{
+    font-size:8.5rem;
+    right:3%;
+    padding-top:50px;
+}
+#product-name{
+    display:none;
 }
 
-.move {
+.footer-class{
+    width:103.5%;
+    //right:2%;
+}
+.options {
+    position: relative;
+    top:150px;
+}
 
-    bottom:450px;
+.reviews-container{
+    position: relative;
+   bottom:380px;
+}
+#reviews-styling{
+    visibility: hidden;
+}
+}
+
+
+
+@media @mobile {
+    #mobile-style {
+        font-size:7rem;
+        position: relative;
+        right:5%;
+    }
+    .teamphoto {
+        display:none;
+    }
+    .teamphoto-placeholder {
+        padding:80px 0;
+        position: relative;
+       top:65px;
+    }
+.move-three {
+    display:none;
+}
+
+.move-two {
+    display:none;
+}
+
+.learn-more {
+   visibility:hidden;
+  
+}
+.icons-styling{
+    padding-left:65px;
+  right:200px;
+    height:25px;
+    width:25px;
+    bottom:160px;
+
+}
+.move-one{
+    min-width: 400px;
+    margin-left:40%;
+    text-align: left;
+}
+.h3-style{
+    padding:10px 125px;
+    font-size:2rem;
+   
+  
+}
+.move-four {
+    position:relative;
+left:170px;
+ 
+  
+}
+
+.icons-styling-a{
+
+    height: 25px;
+    width:25px;
+   position: relative;
+  left:-195px;
+padding-left:60px;
+  top:30px;
+
+
+
+}
+.move-six {
+    bottom:65px;
+    left:160px;
+   
+}
+.footer-class{
+    padding:10px;
+
+}
+.social-media-group{
+    display:flex;
+    justify-content: space-evenly;
+  
+
+
+}
 }
