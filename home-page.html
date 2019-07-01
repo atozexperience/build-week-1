@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> A to Z Experiences </title>
+    <link href="css/index.css" rel="stylesheet">
+    <script src="js/home-page.js"></script>
+</head>
+
+<img class = 'bg-img' src='Images/elevate.jpg'> 
+
+<!--Navigation-->
+<nav id ='navigation'>
+        <a href=“#”>About</a>
+        <a href=“#”> Testimonials</a>
+        <a id ='title' href=“file:///C:/Users/john/Documents/Sprints/build-week-1/home-page.html”>  A to Z </a>
+        <a href =“#”> Home</a>
+        <a href=“file:///C:/Users/john/Documents/Sprints/build-week-1/services.html”> Services</a> 
+</nav>
+
+<!--Body Content-->
+<div class='body'>
+<!--Page Title-->
+ <div class = 'home-content'>
+     <h1> Come Experience The World Outside! </h1>
+     <p class="home-text">Leggings pop-up tbh chicharrones. Sriracha keffiyeh franzen, air plant cray wolf yuccie salvia 
+tbh polaroid. Pug street art poke drinking vinegar keytar pitchfork. Echo park artisan fixie hell of vinyl, small
+batch ethical poke direct trade.
+     </p>
+
+
+     <!--Benefits Section (Tabs)-->
+<div class="section">
+<div class="tabs">
+<div class="tabs-links">
+<div class="tabs-link tabs-link-selected" data-tab="1">Community</div>
+   <div class="tabs-link" data-tab="2">Confidence</div>
+   <div class="tabs-link" data-tab="3">Adventure</div>
+</div>
+                        
+<div class="tabs-items">
+<div class="tabs-item tabs-item-selected" data-tab="1">
+   <div class="tabs-item-title">Community</div>
+   <div class="tabs-item-description">Subway tile cray woke trust fund sartorial mixtape, 
+portland air plant brunch next level. Green juice four loko distillery, plaid quinoa 
+semiotics unicorn banh mi literally vinyl meh mlkshk brunch palo santo. Tacos flexitarian 
+selfies typewriter coloring book prism ethical whatever. IPhone man bun blog retro fashion axe 
+umami tacos cloud bread aesthetic ugh cornhole. Kale chips normcore cliche, mlkshk tilde lumbersexual 
+8-bit put a bird on it freegan vegan actually everyday carry franzen tumblr. Listicle cornhole pork belly
+microdosing banh mi, blue bottle venmo mustache. Next level health goth cred af la croix gluten-free.
+</div>
+</div>
+<div class="tabs-item" data-tab="2">
+    <div class="tabs-item-title">Confidence</div>
+    <div class="tabs-item-description">Leggings pop-up tbh chicharrones. Sriracha keffiyeh franzen, air plant cray 
+wolf yuccie salvia tbh polaroid. Pug street art poke drinking vinegar keytar pitchfork. Echo park artisan fixie hell 
+of vinyl, small batch ethical poke direct trade.
+</div>
+</div>
+<div class="tabs-item" data-tab="3">
+   <div class="tabs-item-title">Adventure</div>
+   <div class="tabs-item-description">
+Blue bottle retro williamsburg, pour-over helvetica messenger bag vape master cleanse keytar succulents. Williamsburg
+slow-carb retro meggings helvetica. Pug shaman organic messenger bag trust fund af, actually gentrify literally gluten-free 
+banh mi williamsburg shabby chic. Deep v cronut hell of kinfolk bushwick, literally next level air plant gastropub helvetica
+locavore church-key.
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+<!--Benefits (Tabs) Java Code-->
+<script>
+  class TabLink {
+      constructor(element) {
+        this.element = element;
+        this.data = this.element.dataset.tab;
+        this.item = document.querySelector(`.tabs-item[data-tab="${this.data}"]`);
+        this.tabItem = new TabItem(this.item);
+        this.element.addEventListener('click', () => {
+        this.select();
+    });
+  };
+    
+  select() {
+    const links = document.querySelectorAll('.tabs-link');
+        links.forEach( link => {
+        link.classList.remove('tabs-link-selected')
+  });
+        this.element.classList.add('tabs-link-selected');
+        this.tabItem.select();
+    }
+  }
+    
+  class TabItem {
+      constructor(element) {
+        this.element = element;
+      }
+    
+      select() {
+        const items = document.querySelectorAll('.tabs-item');
+        items.forEach( item => {
+          item.classList.remove('tabs-item-selected');
+        }) 
+        this.element.classList.add('tabs-item-selected');
+      }
+  }
+  let links = document.querySelectorAll('.tabs-link').forEach( link => new TabLink(link));
+  </script>
+
+<!--Slideshow Header-->
+<div class= 'slide-head'>
+<h1> Connect Through Shared Hobbies </h1>
+
+</div>
+
+
+<!-- Slideshow -->
+<div class="slideshow-container">
+  <div class="slides">
+        <img src="Images/priscilla-du-preez-234138-unsplash.jpg" style="width:100%">
+        <div class="text"> Network </div>
+        </div>
+      
+  <div class="slides">
+        <img src="Images/sarah-cervantes-BOBMNKVry0Q-unsplash.jpg" style="width:100%">
+        <div class="text"> Fitness Groups </div>
+        </div>
+      
+  <div class="slides">
+        <img src="Images/mohau-mannathoko-upvUrxqrmro-unsplash.jpg" style="width:100%">
+        <div class="text"> Brunch </div>
+</div>
+      
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+    <br>
+
+<div style="text-align:center">
+   <span class="dot" onclick="currentSlide(1)"></span> 
+   <span class="dot" onclick="currentSlide(2)"></span> 
+   <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+<script>
+  let slideIndex = 1;
+  showSlides(slideIndex);
+        
+  function plusSlides(n) {
+    showSlides(slideIndex += n);
+}
+        
+  function currentSlide(n) {
+    showSlides(slideIndex = n);
+        }
+        
+  function showSlides(n) {
+    let i;
+    let slides = document.getElementsByClassName("slides");
+    let dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {slideIndex = 1}    
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none";  
+          }
+      for (i = 0; i < dots.length; i++) {
+              dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+}
+</script>
+
+
+</div>
+</footer>
+</div>
+</html>
