@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> Services </title>
+    <link href="css/index.css" rel="stylesheet">
+    <script defer=“defer” src=“services.js”></script>
+</head>
+<body>
+<img class = 'services-img' src='Images/services.jpg'> 
+<!--Header Content-->
+<div class="header">
+<nav id="navigation">
+        <a href="file:///C:/Users/john/Documents/Sprints/build-week-1/home-page.html"> Home</a>
+        <a href= "file:///C:/Users/john/Documents/Sprints/build-week-1/services.html"> Services</a>
+        <a id = 'title' href=“file:///C:/Users/john/Documents/Sprints/build-week-1/home-page.html”> A to Z</a>
+        <a href=“#”> About </a>
+        <a href=“#”> Reviews </a>
+</nav>  
+</div>
+<div class = 'intro'>
+<h1> Get Your Social Life Back! </h1>
+</div>
+
+
+
+<!--Experiences and Host Content /Images -->
+
+<section class = 'top-content'>
+   <div class = 'experinces'>
+        <h2> Group Experiences </h2>
+         <p class = 'experinces-text'> Distillery taiyaki portland umami unicorn bicycle rights. Cornhole ennui yr austin crucifix jean shorts paleo small batch live-edge.
+           Gluten-free mumblecore taxidermy twee cray plaid.Butcher selvage cornhole fashion axe blog VHS tote bag crucifix aesthetic heirloom .</p>
+<ul>
+    <li> Museums </li>
+    <li> Hiking </li>
+    <li> Cooking Lessons </li>
+    <li> Brunch Meetup</li>
+    <li> And so Much More!!</li>
+
+</ul>
+    </div>
+   <div class = 'experinces'>
+    <h2> Independent Experiences </h2>
+    <p class = 'experiences-text'>Four dollar toast fanny pack activated charcoal enamel pin retro. Cray raw denim tousled gastropub.
++1 man bun keytar pour-over live-edge disrupt umami austin waistcoat wayfarers pork belly franzen. Banh mi truffaut iPhone
+mustache.</p>
+
+<ul>
+    <li> Painting Lessons </li>
+    <li> Boxing </li>
+    <li> Something Else</li>
+    <li> Yoga </li>
+</ul>
+ </div>
+</section>
+
+<!--Become a Host Content-->
+
+<h2 class="host-title"> Host An Experience </h2>
+<section class= 'btm-content'>
+    <div class = 'host-text'>
+ <p> Kogi skateboard health goth cred gastropub flexitarian hot chicken art party bitters kinfolk literally humblebrag. Hella sartorial 
+    affogato, fashion axe pork belly cold-pressed vice authentic. Everyday carry street art shoreditch glossier literally raclette kogi
+    direct trade gluten-free vegan palo santo YOLO live-edge. Flannel brunch hashtag beard chillwave. Seitan vice hexagon, pok pok hell of taiyaki unicorn gochujang flannel 
+    woke hoodie.</p>
+
+ 
+<a class = 'host-btn' href="file:///C:/Users/john/Documents/Sprints/build-week-1/home-page.html"> Become a Host! </a>
+ </div>
+
+ <script type="text/javascript">
+
+    function setNewImage(){
+      document.getElementById('host').src = "Images/host2.jpg";
+    }
+    function setOldImage(){
+        document.getElementById('host').src = "Images/host.jpg";
+    }
+    
+    </script>
+ 
+ 
+ <img id='host' onmouseover = "setNewImage()" onmouseout="setOldImage()" src="Images/host.jpg" onmouseover="rollover(this)" alt='host'/>
+</section> 
+
+
+<footer>
+<p>Copyright A to Z 2019</p>
+</footer>
+</body>
+</html>
